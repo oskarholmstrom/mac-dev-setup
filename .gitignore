@@ -1,0 +1,17 @@
+# Machine-local Claude Code state (permission allowlist with absolute paths, etc.)
+.claude/settings.local.json
+.claude/worktrees/
+
+# Stray scratch — not part of the setup (move/delete it; never committed)
+test.py
+
+# Backups created by adapt-this-mac.sh
+mac-setup-backup-*/
+
+# macOS
+.DS_Store
+._*
+
+# Editor scratch
+*.swp
+*.swo

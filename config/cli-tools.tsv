@@ -1,0 +1,41 @@
+TOOL	WHAT IT DOES	EXAMPLE
+rg	Fast recursive code/text search (ripgrep)	rg "TODO" src/
+fd	Fast, friendly file finder	fd -e py src/
+bat	cat with syntax highlighting + git marks	bat setup.sh
+eza	Modern ls with icons and git status	eza -lah --git
+fzf	Fuzzy-find any list (Ctrl-R history, Ctrl-T files)	git switch $(git branch | fzf)
+fzf-tab	Fuzzy, previewable TAB completion (zsh plugin)	cd <TAB>   /   git switch <TAB>
+jq	Query and transform JSON	jq '.items[].name' data.json
+yq	Query and transform YAML/JSON	yq '.services | keys' compose.yml
+delta	Syntax-highlighted git diffs (auto via pager)	git diff
+zoxide	Smarter cd that learns your dirs	z myproject
+lazygit	Terminal UI for git (stage, commit, rebase)	lazygit
+tldr	Example-first command help	tldr tar
+btop	Interactive system / CPU / memory monitor	btop
+starship	The shell prompt (loads automatically)	starship config
+direnv	Auto-load per-directory env vars	echo 'export PORT=3000' > .envrc; direnv allow
+mise	Manage language/tool versions	mise use node@lts
+uv	Fast Python package + venv manager	uv venv; uv pip install torch
+gh	GitHub from the terminal (PRs, issues)	gh pr create
+git-lfs	Version large binary files	git lfs track "*.safetensors"
+shellcheck	Lint shell scripts for bugs	shellcheck setup.sh
+shfmt	Format shell scripts	shfmt -w setup.sh
+watchexec	Re-run a command when files change	watchexec -e py pytest
+mas	Install Mac App Store apps from the CLI	mas install 497799835
+croc	Send files/secrets between machines	croc send model.pt
+op	1Password CLI (read secrets, SSH)	op read "op://Private/GitHub/token"
+claude	Claude Code agent in your terminal	claude
+claude-backup	Archive your Claude chat transcripts now (also runs daily)	claude-backup
+claude-code-transcripts	Render Claude Code sessions to browsable HTML	claude-code-transcripts all
+wt-local	New git worktree from your LOCAL HEAD, then open it	wt-local feat-x
+wt-prune	Remove git worktrees whose branch is already merged	wt-prune
+node	JavaScript runtime (managed by mise)	node script.js
+go	Go toolchain (managed by mise)	go run .
+python3	Python — prefer uv-managed venvs	uv run python script.py
+dust (opt)	Disk usage as a tree (du replacement)	dust
+duf (opt)	Disk-free overview (df replacement)	duf
+procs (opt)	Modern ps with color and tree view	procs
+sd (opt)	Simple find & replace (sed alternative)	sd 'foo' 'bar' file.txt
+hyperfine (opt)	Benchmark how long commands take	hyperfine 'ls -R'
+tokei (opt)	Count lines of code by language	tokei
+yazi (opt)	Fast TUI file manager	yazi

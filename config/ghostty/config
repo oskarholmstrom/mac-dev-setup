@@ -1,0 +1,32 @@
+# Ghostty configuration — https://ghostty.org/docs/config
+# Reload in-app with ⌘, (Settings) or `ghostty +reload-config`.
+# NOTE: Ghostty has NO inline comments. A '#' after a value becomes part of the
+# value, so keep every comment on its own line.
+
+# Font comes from the Brewfile's font-jetbrains-mono-nerd-font cask.
+font-family = JetBrainsMono Nerd Font
+font-size = 12
+
+# Run `ghostty +list-themes` to see the built-ins.
+theme = TokyoNight Night
+
+window-padding-x = 8
+window-padding-y = 8
+
+# Slower mouse scroll + transparent titlebar (from your previous setup).
+mouse-scroll-multiplier = 0.5
+macos-titlebar-style = transparent
+
+# Reopen windows where you left them after a restart.
+window-save-state = always
+
+# Treat the right ⌥ as Alt so readline/emacs word-motions work.
+macos-option-as-alt = right
+
+# Generous scrollback for long agent / build output.
+scrollback-limit = 100000000
+
+# Selecting text copies it to the system clipboard (so ⌘V pastes it); click in
+# a shell prompt to move the cursor there.
+copy-on-select = clipboard
+cursor-click-to-move = true

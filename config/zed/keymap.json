@@ -1,0 +1,17 @@
+// Zed keymap — https://zed.dev/docs/key-bindings
+// To see the defaults, run `zed: open default keymap` from the command palette.
+// (No custom bindings yet — scaffold carried over so the new machine starts here.)
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  }
+]

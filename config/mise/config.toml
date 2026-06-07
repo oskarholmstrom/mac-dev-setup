@@ -1,0 +1,7 @@
+# mise global tool versions — https://mise.jdx.dev
+# This is the SOURCE OF TRUTH for global toolchains. `mise install` reads it.
+# Python is intentionally NOT here — it's managed by `uv` (see setup.sh phase 5).
+
+[tools]
+node = "lts"
+go = "latest"

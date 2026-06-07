@@ -1,0 +1,39 @@
+# Global gitignore (core.excludesfile). Project-agnostic noise only.
+# NOTE: model weights / datasets are intentionally NOT here — track those
+# per-project with .gitignore + git-lfs, so a global rule can't hide an
+# lfs-tracked *.safetensors/*.pt you actually want to commit.
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Icon
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Env / secrets (project-level)
+.env
+.env.local
+
+# direnv
+.direnv/
+
+# Editor scratch
+*.swp
+*.swo
+
+# Personal tooling — kept out of shared repos. These still work while ignored:
+# Claude reads .worktreeinclude from your main checkout, direnv reads .envrc anyway.
+.envrc
+.worktreeinclude

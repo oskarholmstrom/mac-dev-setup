@@ -1,0 +1,23 @@
+{
+  "title": "Hold ⌘Q to quit",
+  "rules": [
+    {
+      "description": "Hold ⌘Q for 1 second to quit (prevents accidental quits)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": { "mandatory": ["command"] }
+          },
+          "to_if_held_down": [
+            { "key_code": "q", "modifiers": ["left_command"] }
+          ],
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 1000
+          }
+        }
+      ]
+    }
+  ]
+}
